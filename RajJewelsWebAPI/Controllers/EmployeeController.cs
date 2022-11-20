@@ -10,7 +10,7 @@ namespace RajJewelsWebAPI.Controllers
 {
     public class EmployeeController : Controller
     {
-        // GET: /<controller>/
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
