@@ -4,6 +4,7 @@ using RajJewelsWebAPI.IServices;
 using RajJewelsWebAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+var policyName = "_myAllowSpecificOrigins";
 
 // Add services to the container.
 builder.Services.AddScoped<IRajServices, RajServices>();
@@ -14,6 +15,17 @@ builder.Services.AddSwaggerGen();
 
 // Adding Automapper
 builder.Services.AddAutoMapper(typeof(AutomappingProfiles).Assembly);
+
+// CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: policyName,
+      builder => {
+         builder.WithOrigins("http://localhost:4200") // specifying the allowed origin
+                 .WithMethods("*") // defining the allowed HTTP method
+                  .AllowAnyHeader(); // allowing any header to be sent
+      });
+});
 
 var app = builder.Build();
 
