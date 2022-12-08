@@ -4,14 +4,14 @@
     "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewelsWebAPI/RajJewelsWebAPI.csproj": {}
   },
   "projects": {
-    "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewelsWebAPI/RajJewelsWebAPI.csproj": {
+    "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/RajJewels.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewelsWebAPI/RajJewelsWebAPI.csproj",
-        "projectName": "RajJewelsWebAPI",
-        "projectPath": "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewelsWebAPI/RajJewelsWebAPI.csproj",
+        "projectUniqueName": "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/RajJewels.domain.csproj",
+        "projectName": "RajJewels.domain",
+        "projectPath": "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/RajJewels.domain.csproj",
         "packagesPath": "/Users/vishveshrajrajasekar/.nuget/packages/",
-        "outputPath": "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewelsWebAPI/obj/",
+        "outputPath": "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vishveshrajrajasekar/.nuget/NuGet/NuGet.Config"
@@ -39,6 +39,102 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewelsWebAPI/RajJewelsWebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewelsWebAPI/RajJewelsWebAPI.csproj",
+        "projectName": "RajJewelsWebAPI",
+        "projectPath": "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewelsWebAPI/RajJewelsWebAPI.csproj",
+        "packagesPath": "/Users/vishveshrajrajasekar/.nuget/packages/",
+        "outputPath": "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewelsWebAPI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/vishveshrajrajasekar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/RajJewels.domain.csproj": {
+                "projectPath": "/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/RajJewels.domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.0, )"

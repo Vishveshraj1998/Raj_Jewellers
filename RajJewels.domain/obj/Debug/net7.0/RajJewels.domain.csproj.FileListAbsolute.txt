@@ -1,0 +1,14 @@
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/bin/Debug/net7.0/RajJewels.domain.deps.json
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/bin/Debug/net7.0/RajJewels.domain.dll
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/bin/Debug/net7.0/RajJewels.domain.pdb
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/obj/Debug/net7.0/RajJewels.domain.csproj.AssemblyReference.cache
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/obj/Debug/net7.0/RajJewels.domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/obj/Debug/net7.0/RajJewels.domain.AssemblyInfoInputs.cache
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/obj/Debug/net7.0/RajJewels.domain.AssemblyInfo.cs
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/obj/Debug/net7.0/RajJewels.domain.csproj.CoreCompileInputs.cache
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/obj/Debug/net7.0/RajJewels.domain.dll
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/obj/Debug/net7.0/refint/RajJewels.domain.dll
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/obj/Debug/net7.0/RajJewels.domain.pdb
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/obj/Debug/net7.0/ref/RajJewels.domain.dll
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/bin/Debug/net7.0/RajJewels.domain.runtimeconfig.json
+/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/obj/Debug/net7.0/RajJewels.domain.genruntimeconfig.cache

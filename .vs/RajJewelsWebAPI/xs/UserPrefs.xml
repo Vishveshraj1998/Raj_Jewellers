@@ -1,4 +1,43 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{E3DAFAFE-DF28-4DE6-93B1-B621EDAD9600}|https">
-  <MultiItemStartupConfigurations />
+﻿<Properties StartupConfiguration="{E3DAFAFE-DF28-4DE6-93B1-B621EDAD9600}|https" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewelsWebAPI/Controllers/EmployeeController.cs" relfile="RajJewelsWebAPI/Controllers/EmployeeController.cs" line="37" column="1" />
+      <Breakpoint file="/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewelsWebAPI/Services/RajServices.cs" relfile="RajJewelsWebAPI/Services/RajServices.cs" line="23" column="1" />
+      <Breakpoint file="/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/Repository.cs" relfile="RajJewels.domain/Repository.cs" line="20" column="1" />
+      <Breakpoint file="/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/Repository.cs" relfile="RajJewels.domain/Repository.cs" line="21" column="1" />
+      <Breakpoint file="/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewels.domain/Repository.cs" relfile="RajJewels.domain/Repository.cs" line="22" column="1" />
+      <Breakpoint file="/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewelsWebAPI/Controllers/EmployeeController.cs" relfile="RajJewelsWebAPI/Controllers/EmployeeController.cs" line="36" column="1" />
+      <Breakpoint file="/Users/vishveshrajrajasekar/Projects/RajJewelsWebAPI/RajJewelsWebAPI/Controllers/EmployeeController.cs" relfile="RajJewelsWebAPI/Controllers/EmployeeController.cs" line="38" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.RajJewelsWebAPI PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RajJewelsWebAPI/Controllers/EmployeeController.cs">
+    <Files>
+      <File FileName="RajJewelsWebAPI/Controllers/EmployeeController.cs" Line="17" Column="24" />
+      <File FileName="RajJewelsWebAPI/Services/RajServices.cs" />
+      <File FileName="RajJewelsWebAPI/ViewModels/Users.cs" />
+      <File FileName="RajJewels.domain/Entities/RjUser.cs" />
+      <File FileName="RajJewels.domain/Repository.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RajJewelsWebAPI" expanded="True">
+            <Node name="RajJewels.domain" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Entities" expanded="True" />
+            </Node>
+            <Node name="RajJewelsWebAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
 </Properties>
