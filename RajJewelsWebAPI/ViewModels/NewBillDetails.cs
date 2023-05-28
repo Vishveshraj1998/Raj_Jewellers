@@ -8,7 +8,7 @@
 
         public string? Address { get; set; }
 
-        public int? PhoneNumber { get; set; }
+        public string? PhoneNumber { get; set; }
 
         public List<JewelItem>? JewelItems { get; set; }
 
@@ -29,9 +29,9 @@
 
     public class JewelItem
     {
-        public string Jewel { get; set; } = null!;
+        public string Name { get; set; } = null!;
 
-        public string? QualityType { get; set; }
+        public string? Type { get; set; }
 
         public int? Weight { get; set; }
 

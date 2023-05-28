@@ -11,7 +11,7 @@ public partial class RjNewbilldetail
 
     public string? Address { get; set; }
 
-    public int? PhoneNumber { get; set; }
+    public string? PhoneNumber { get; set; }
 
     public string? OldJewel { get; set; }
 
