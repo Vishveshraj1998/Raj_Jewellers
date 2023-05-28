@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using RajJewels.domain.Entities;
-using RajJewels.domain;
-using RajJewelsWebAPI.Services;
-using RajJewelsWebAPI.ViewModels;
+﻿using Microsoft.AspNetCore.Mvc;
 using RajJewelsWebAPI.IServices;
+using RajJewelsWebAPI.ViewModels;
 
 // Raj Jewellers Controller
 
@@ -58,6 +51,19 @@ namespace RajJewelsWebAPI.Controllers
         public ActionResult saveUsers([FromBody]Users user)
         {
             int detail = rajServices.saveUsers(user);
+            return Ok(detail);
+        }
+
+        /// <summary>
+        /// Saving the New bill
+        /// </summary>
+        /// <param name="newBill">New bill</param>
+        /// <returns>Returns http response result with integer</returns>
+        [HttpPost]
+        [Route("SaveNewBill")]
+        public async Task<ActionResult> SaveNewBill([FromBody] NewBillDetails newBill)
+        {
+            int detail = await rajServices.SaveNewBill(newBill);
             return Ok(detail);
         }
     }

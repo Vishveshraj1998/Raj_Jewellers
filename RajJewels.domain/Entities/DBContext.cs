@@ -15,6 +15,10 @@ public partial class DBContext : DbContext
     {
     }
 
+    public virtual DbSet<RjJewelitem> RjJewelitems { get; set; }
+
+    public virtual DbSet<RjNewbilldetail> RjNewbilldetails { get; set; }
+
     public virtual DbSet<RjUser> RjUsers { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -23,6 +27,47 @@ public partial class DBContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<RjJewelitem>(entity =>
+        {
+            entity.HasKey(e => e.BillNumber);
+
+            entity.ToTable("RJ_JEWELITEMS");
+
+            entity.Property(e => e.BillNumber)
+                .ValueGeneratedNever()
+                .HasColumnName("Bill_Number");
+            entity.Property(e => e.Name)
+                .HasMaxLength(200)
+                .IsUnicode(false);
+            entity.Property(e => e.Type)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<RjNewbilldetail>(entity =>
+        {
+            entity.HasKey(e => e.BillNumber).HasName("PK_RJ_NewBillDetails");
+
+            entity.ToTable("RJ_NEWBILLDETAILS");
+
+            entity.Property(e => e.BillNumber)
+                .ValueGeneratedNever()
+                .HasColumnName("Bill_Number");
+            entity.Property(e => e.Address)
+                .HasMaxLength(500)
+                .IsUnicode(false);
+            entity.Property(e => e.FirstName)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.LastName)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.OldJewel)
+                .HasMaxLength(150)
+                .IsUnicode(false);
+            entity.Property(e => e.WastageAndGst).HasColumnName("WastageAndGST");
+        });
+
         modelBuilder.Entity<RjUser>(entity =>
         {
             entity.HasKey(e => e.UserId).HasName("PK__RJ_USERS__F3BEEBFF8141D91F");

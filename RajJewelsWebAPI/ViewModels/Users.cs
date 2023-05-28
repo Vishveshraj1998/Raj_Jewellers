@@ -1,5 +1,4 @@
-﻿using System;
-namespace RajJewelsWebAPI.ViewModels
+﻿namespace RajJewelsWebAPI.ViewModels
 {
     public class Users
     {
@@ -17,6 +16,4 @@ namespace RajJewelsWebAPI.ViewModels
 
         public string? Pass { get; set; }
     }
-
 }
-

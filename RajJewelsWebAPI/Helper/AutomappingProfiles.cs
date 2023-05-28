@@ -1,11 +1,10 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using RajJewels.domain.Entities;
 using RajJewelsWebAPI.ViewModels;
 
 namespace RajJewelsWebAPI.Helper
 {
-	public class AutomappingProfiles:Profile
+    public class AutomappingProfiles:Profile
 	{
 		public AutomappingProfiles()
 		{
@@ -14,6 +13,12 @@ namespace RajJewelsWebAPI.Helper
 
 			// Mapping the UserDetails and Rjuser
             CreateMap<UserDetails, RjUser>().ReverseMap();
+
+            // Mapping the Jewel Item
+            CreateMap<JewelItem, RjJewelitem>().ReverseMap();
+
+            // Mapping the New Jewel Item details
+            CreateMap<NewBillDetails, RjNewbilldetail>().ReverseMap();
         }
 	}
 }

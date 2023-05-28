@@ -39,6 +39,26 @@ namespace RajJewelsWebAPI.Services
             int detail = repository.SaveUsers(rjUser);
             return detail;
         }
-	}
+
+        // Saving the user values
+        public async Task<int> SaveNewBill(NewBillDetails newBill)
+        {
+            RjNewbilldetail newbilldetail = new RjNewbilldetail();
+            List<RjJewelitem> rjJewelitems = new List<RjJewelitem>();
+            List<JewelItem> jewelItems = new List<JewelItem>();
+            jewelItems.AddRange(newBill.JewelItems);
+            newbilldetail = mapper.Map<NewBillDetails, RjNewbilldetail>(newBill);
+            rjJewelitems = mapper.Map<List<JewelItem>, List<RjJewelitem>>(jewelItems);
+            var billNumber = await repository.GetBillNumber();
+            foreach(var jewelitem in rjJewelitems)
+            {
+                jewelitem.BillNumber = billNumber + 1;
+            }
+            newbilldetail.BillNumber = billNumber + 1;
+            int detail = repository.SaveJewelItems(rjJewelitems);
+            detail = repository.SaveNewBill(newbilldetail);
+            return detail;
+        }
+    }
 } 
 

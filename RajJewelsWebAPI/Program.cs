@@ -1,5 +1,4 @@
-﻿using RajJewels.domain;
-using RajJewelsWebAPI.Helper;
+﻿using RajJewelsWebAPI.Helper;
 using RajJewelsWebAPI.IServices;
 using RajJewelsWebAPI.Services;
 
@@ -41,6 +40,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors(policyName);
 
 app.Run();
 
